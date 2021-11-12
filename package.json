@@ -25,7 +25,7 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "babel-jest": "^27.0.6",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.2.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -39,9 +39,9 @@
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "terser-webpack-plugin": "^5.1.4",
     "url-loader": "^4.1.1",
-    "webpack": "^5.47.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.3",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {

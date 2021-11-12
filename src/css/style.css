@@ -1,20 +1,16 @@
-/* body {
-    background-color: #999;
-} */
-    
 .board {
-    width: 700px;
+    width: 450px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }  
     
 .cell {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
     background: #c1c4c1;
-    border: 1px, solid, #000;
+    border: 2px solid #000;
     border-radius: 20%;
 }
 
@@ -23,5 +19,5 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 999;
+  z-index: 2;
 }

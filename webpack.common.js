@@ -37,11 +37,14 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif)$/i,
+                include: /img/,
                 use: [
                     {
-                        loader: 'url-loader',
+                        loader: 'file-loader',
                         options: {
-                            limit: 8192,
+                            // name: '[name].[ext]',
+                            outputPath: 'img/',
+                            publicPath: 'img/',
                         },
                     },
                 ],
