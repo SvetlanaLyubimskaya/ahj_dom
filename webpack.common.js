@@ -6,7 +6,7 @@ module.exports = {
     target: 'web',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '',
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -32,11 +32,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.svg$/,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.(png|jpg|gif)$/i,
+                test: /\.(png|svg|jpe?g|gif)$/,
                 include: /img/,
                 use: [
                     {
@@ -48,6 +44,10 @@ module.exports = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
             },
         ],
     },
