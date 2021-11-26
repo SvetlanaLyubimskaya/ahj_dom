@@ -1,0 +1,1 @@
+.board{display:flex;flex-wrap:wrap;justify-content:space-around;width:450px}.cell{background:#c1c4c1;border:2px solid #000;border-radius:20%;height:100px;margin-bottom:10px;width:100px}.goblin{background-color:red;background-image:url(img/goblin.png);background-position:50%;background-repeat:no-repeat;background-size:contain}
