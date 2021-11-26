@@ -7,6 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '',
+        assetModuleFilename: 'img/[name][ext]',
     },
     module: {
         rules: [
@@ -33,17 +34,7 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpe?g|gif)$/,
-                include: /img/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'img/',
-                            publicPath: 'img/',
-                        },
-                    },
-                ],
+                type: 'asset/resource',
             },
             {
                 test: /\.svg$/,
